@@ -1,0 +1,53 @@
+/*
+Theme Name: Kaya Responsive WP Theme
+Theme URI: https://kayacuneyt.com/themes/kayaresponsivewp/
+Author: Cüneyt Kaya
+Author URI: https://kayacuneyt.com/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.2
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+body.admin-bar .page-header-fixed {
+    position:fixed;
+    top:28px;
+    z-index: 99999;
+}
+
+.dropdown-menu{
+    font-size: small !important;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+.pt-90{
+    padding-top:90px;
+}
+
+.mt-28{
+    margin-top: 28px;
+}
+
+.top-25{
+    top: 25vh;
+}
+
+.fu-600{
+    font-weight: 600;
+}
+
+.border-top-gray{
+    border-top: 1px solid #3e3e3e;
+}
+
+.feature_holder img{
+    width: 125px;
+    height: auto;
+}
