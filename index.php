@@ -10,14 +10,14 @@
                             <a href="<?php the_permalink(); ?>" class="list-group-item list-group-item-action small">
                                 <div class="row align-items-center">
                                     <div class="col-lg-4 col-md-4">
-                                            <?php // check if the post or page has a Featured Image assigned to it.
-                                            
-                                                if ( has_post_thumbnail() ) { ?>
-                                        <img class="img-fluid rounded" src="<?php echo get_the_post_thumbnail_url()?>" alt="<?php echo get_the_title(); ?>" />
+                                            <?php 
+                                                // check if the post or page has a Featured Image assigned to it.
+                                                if ( has_post_thumbnail() ) { 
+                                            ?>
+                                                <img class="img-fluid rounded" src="<?php echo get_the_post_thumbnail_url()?>" alt="<?php echo get_the_title(); ?>" />
                                             <?php }else{ ?>
                                                 <img class="img-fluid rounded" src="<?php echo get_template_directory_uri() . '/img/placeholder.png' ?>" alt="<?php echo get_the_title(); ?>" />
                                             <?php } ?>
-                                        
                                     </div>
                                     <div class="col-lg-8 col-md-8">
                                         <h3 class="fs-5 fu-600"><?php echo get_the_title(); ?></h3>
@@ -32,12 +32,7 @@
 
                 </div>
                 <div class="col-lg-3 col-md-3">
-
-                        <?php if ( is_active_sidebar( 'default_sidebar' ) ) : ?>
-                            
-                                <?php dynamic_sidebar( 'default_sidebar' ); ?>
-                            
-                        <?php endif; ?>
+                    <?php get_sidebar(); ?>
                 </div>
             </div>
         </div>

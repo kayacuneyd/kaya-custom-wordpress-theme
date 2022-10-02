@@ -41,6 +41,33 @@
       ) );
 
       register_sidebar( array(
+        'name'          => 'Course Cat Text',
+        'id'            => 'course_cat_text',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title'  => '<h2 class="fs-5 fw-bold">',
+        'after_title'   => '</h2>',
+      ) );
+
+      register_sidebar( array(
+        'name'          => 'Services Text',
+        'id'            => 'services_text',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title'  => '<h2 class="fs-5 fw-bold">',
+        'after_title'   => '</h2>',
+      ) );
+
+      register_sidebar( array(
+        'name'          => 'Pop up Form',
+        'id'            => 'pop_up_form',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title'  => '',
+        'after_title'   => '',
+      ) );
+
+      register_sidebar( array(
         'name'          => 'Default Sidebar',
         'id'            => 'default_sidebar',
         'before_widget' => '<aside class="card small mb-3 default_sidebar">',

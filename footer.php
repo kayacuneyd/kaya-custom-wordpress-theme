@@ -33,28 +33,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                            </div>
-                            <div class="col-md-6">
-                                
-                                <input type="email" placeholder="Email" class="form-control" id="inputEmail4">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="password" placeholder="Password" class="form-control" id="inputPassword4">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" placeholder="Address" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
+                        <?php if ( is_active_sidebar( 'pop_up_form' ) ) : ?>
                             
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-success btn-sm">Sign Up</button>
-                            </div>
-                        </form>
+                            <?php dynamic_sidebar( 'pop_up_form' ); ?>
+                            
+                        <?php endif; ?>
                     </div>
                     
                     </div>
