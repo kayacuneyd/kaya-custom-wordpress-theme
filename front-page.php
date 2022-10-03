@@ -41,33 +41,30 @@ get_header(); ?>
             <div class="col-md-4 col-lg-4">
                 <div class="d-flex align-items-center feature_holder small border rounded mb-3">
                     <div class="flex-shrink-0">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/img/placeholder.png" alt="<?php echo get_the_title(); ?>">
+                        <img class="img-fluid p-2" src="<?php echo the_field('feature_one_image');?>" alt="<?php echo get_the_title(); ?>">
                     </div>
                     <div class="flex-grow-1 ms-3">
-                        <h3 class="fs-6 fw-bold mt-3">Featured Heading</h3>
-                        <p> This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                    <?php echo the_field('feature_one_heading');?>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="d-flex align-items-center feature_holder small border rounded mb-3">
                     <div class="flex-shrink-0">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/img/placeholder.png" alt="<?php echo get_the_title(); ?>">
+                        <img class="img-fluid p-2" src="<?php echo the_field('feature_two_image');?>" alt="<?php echo get_the_title(); ?>">
                     </div>
                     <div class="flex-grow-1 ms-3">
-                        <h3 class="fs-6 fw-bold mt-3">Featured Heading</h3>
-                        <p> This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                        <?php echo the_field('feature_two_heading');?>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="d-flex align-items-center feature_holder small border rounded mb-3">
                     <div class="flex-shrink-0">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/img/placeholder.png" alt="<?php echo get_the_title(); ?>">
+                        <img class="img-fluid p-2" src="<?php echo the_field('feature_three_image');?>" alt="<?php echo get_the_title(); ?>">
                     </div>
                     <div class="flex-grow-1 ms-3">
-                        <h3 class="fs-6 fw-bold mt-3">Featured Heading</h3>
-                        <p> This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                        <?php echo the_field('feature_three_heading');?>
                     </div>
                 </div>
             </div>
@@ -99,7 +96,7 @@ get_header(); ?>
 
             <div class="row mt-4">
                 <div class="col-lg-3 col-md-3">
-                    <a href="#" class="card text-decoration-none text-dark text-center mb-3">
+                    <a href="<?php echo bloginfo('url'); ?>/job-oriented/" class="card text-decoration-none text-dark text-center mb-3">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder.png" alt="Job Oriented Courses">
                         <div class="card-body">
                             <h3 class="fs-6 m-0 bold">Job Oriented Courses</h3>
@@ -108,7 +105,7 @@ get_header(); ?>
                 </div>
 
                 <div class="col-lg-3 col-md-3">
-                    <a href="#" class="card text-decoration-none text-dark text-center mb-3">
+                    <a href="<?php echo bloginfo('url'); ?>/short-term/" class="card text-decoration-none text-dark text-center mb-3">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder.png" alt="Short-Term Courses">
                         <div class="card-body">
                             <h3 class="fs-6 m-0 bold">Short-Term Courses</h3>
@@ -117,16 +114,16 @@ get_header(); ?>
                 </div>
 
                 <div class="col-lg-3 col-md-3">
-                    <a href="#" class="card text-decoration-none text-dark text-center mb-3">
+                    <a href="<?php echo bloginfo('url'); ?>/certificate/" class="card text-decoration-none text-dark text-center mb-3">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder.png" alt="Sertification Courses">
                         <div class="card-body">
-                            <h3 class="fs-6 m-0 bold">Sertification Courses</h3>
+                            <h3 class="fs-6 m-0 bold">Certification Courses</h3>
                         </div>
                     </a>
                 </div>
 
                 <div class="col-lg-3 col-md-3">
-                    <a href="#" class="card text-decoration-none text-dark text-center mb-3">
+                    <a href="<?php echo bloginfo('url'); ?>/online/" class="card text-decoration-none text-dark text-center mb-3">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder.png" alt="Online Courses">
                         <div class="card-body">
                             <h3 class="fs-6 m-0 bold">Online Courses</h3>

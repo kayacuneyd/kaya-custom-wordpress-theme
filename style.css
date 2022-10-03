@@ -73,3 +73,20 @@ pre{
     background-color: #e1e1e1;
     border-radius: 3px;
 }
+
+.course-syllabus ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    column-count: 2;
+}
+
+.course-syllabus ul li{
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    padding: 12px;
+    margin: 5px;
+    width: 250px;
+    border-radius: 3px;
+}
